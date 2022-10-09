@@ -34,7 +34,7 @@ class AlienInvasion:
                 self.ship.update()
                 self._update_bullets()
                 self._update_aliens()
-                
+
             self._update_screen()
 
     def _check_events(self):
@@ -74,7 +74,7 @@ class AlienInvasion:
             if bullet.rect.bottom <= 0:
                  self.bullets.remove(bullet)
 
-        self.check_bullet_alien_collisions()
+        self._check_bullet_alien_collisions()
     
     def _check_bullet_alien_collisions(self):
 
